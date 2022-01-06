@@ -10,7 +10,7 @@ public class HashMapPractice {
         Scanner input = new Scanner(System.in);
         Integer newID;
 
-        System.out.println("Enter your students (or Enter to finish):");
+        System.out.println("Enter your students (or Enter 0):");
 
         //get student id and names
         do {
@@ -18,14 +18,14 @@ public class HashMapPractice {
             System.out.print("Student ID: ");
             newID = input.nextInt();
 
-            if (!newID.equals(null)) {
+            if (!newID.equals(0)) {
                 System.out.print("Name: ");
-                String newName = input.nextLine();
+                String newName = input.next();
                 students.put(newID, newName);
 
                 input.nextLine();
             }
-        } while(!newID.equals(null));
+        } while(!newID.equals(0));
 
         System.out.println("\nClass roster: ");
         for (Map.Entry<Integer, String> student: students.entrySet()) {
