@@ -24,7 +24,7 @@ public class Menu {
             System.out.println("Date: " + i.getDate());
             System.out.println("*****");
         }
-        
+
 
     }
 }
