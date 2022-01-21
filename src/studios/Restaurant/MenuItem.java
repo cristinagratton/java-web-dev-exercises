@@ -1,26 +1,31 @@
 package studios.Restaurant;
 
 import java.time.LocalDate;
+import java.util.Date;
 
 public class MenuItem {
+    private String name;
     private double price;
     private String description;
     private String category;
-    private LocalDate date;
+    private boolean isNew;
+    private Date dateAdded;
 
-    public MenuItem(double price, String description, String category, LocalDate date) {
+    public MenuItem(String name, double price, String description, String category, boolean isNew, Date dateAdded) {
+        this.name = name;
         this.price = price;
         this.description = description;
         this.category = category;
-        this.date = date;
+        this.isNew = isNew;
+        this.dateAdded = dateAdded;
     }
 
-    public LocalDate getDate() {
-        return date;
+    public String getName() {
+        return name;
     }
 
-    public void setDate(LocalDate date) {
-        this.date = date;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public double getPrice() {
@@ -47,5 +52,19 @@ public class MenuItem {
         this.category = category;
     }
 
+    public boolean isNew() {
+        return isNew;
+    }
 
+    public void setNew(boolean aNew) {
+        isNew = aNew;
+    }
+
+    public Date getDateAdded() {
+        return dateAdded;
+    }
+
+    public void setDateAdded(Date dateAdded) {
+        this.dateAdded = dateAdded;
+    }
 }
