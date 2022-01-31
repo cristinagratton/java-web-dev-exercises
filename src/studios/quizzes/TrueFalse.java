@@ -18,4 +18,14 @@ public class TrueFalse extends Question{
     public void setAnswer(boolean answer) {
         this.answer = answer;
     }
+
+    @Override
+    public void displayAnswers() {
+
+    }
+
+    @Override
+    public int getAnswers() {
+        return 0;
+    }
 }

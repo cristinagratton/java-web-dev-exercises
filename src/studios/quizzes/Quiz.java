@@ -19,7 +19,7 @@ public class Quiz {
     //Options: "True", "False";
     //Answer: "True";
 
-    MultipleChoice question1 = new MultipleChoice("hello", ,"c");
+   //MultipleChoice question1 = new MultipleChoice("hello","c");
 
     //run or carry out quiz
     //grade quiz

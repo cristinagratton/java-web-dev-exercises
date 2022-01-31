@@ -19,4 +19,13 @@ public class MultipleChoice extends Question{
         this.answer = answer;
     }
 
+    @Override
+    public void displayAnswers() {
+
+    }
+
+    @Override
+    public int getAnswers() {
+        return 0;
+    }
 }

@@ -17,4 +17,14 @@ public class Checkbox extends Question{
     public void setAnswer(ArrayList<String> answer) {
         this.answer = answer;
     }
+
+    @Override
+    public void displayAnswers() {
+
+    }
+
+    @Override
+    public int getAnswers() {
+        return 0;
+    }
 }
